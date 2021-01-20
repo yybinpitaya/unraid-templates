@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>baota</Name>
+  <Repository>pch18/baota:lnmp</Repository>
+  <Registry>https://registry.hub.docker.com/r/pch18/baota/tags</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8888]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1611111865</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>20</HostPort>
+        <ContainerPort>20</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>21</HostPort>
+        <ContainerPort>21</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>888</HostPort>
+        <ContainerPort>888</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8888</HostPort>
+        <ContainerPort>8888</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/panel/www/</HostDir>
+      <ContainerDir>/www</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/panel/www/wwwroot/</HostDir>
+      <ContainerDir>/wwwroot</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="www" Target="/www" Default="/mnt/user/panel/www/" Mode="rw" Description="&#x521D;&#x6B21;&#x4F7F;&#x7528;&#x6B65;&#x9AA4;&#13;&#10;1.&#x5BB9;&#x5668;&#x8DEF;&#x5F84; /other &#13;&#10;2.&#x5C06;&#x5BB9;&#x5668;&#x4E2D;/www  &#x590D;&#x5236;&#x5230; /other &#13;&#10;&#x7136;&#x540E;&#x5207;&#x6362;&#x5230; /www &#x5373;&#x53EF;&#13;&#10;&#x5B9D;&#x5854;www&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/panel/www/</Config>
+  <Config Name="Port: 20" Target="20" Default="20" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 20" Type="Port" Display="always" Required="true" Mask="false">20</Config>
+  <Config Name="443" Target="443" Default="443" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 443" Type="Port" Display="always" Required="true" Mask="false">443</Config>
+  <Config Name="21" Target="21" Default="21" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 21" Type="Port" Display="always" Required="true" Mask="false">21</Config>
+  <Config Name="80" Target="80" Default="80" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="888" Target="888" Default="888" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 888" Type="Port" Display="always" Required="true" Mask="false">888</Config>
+  <Config Name="8888" Target="8888" Default="8888" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 8888" Type="Port" Display="always" Required="true" Mask="false">8888</Config>
+  <Config Name="/wwwroot:/www/wwwroot" Target="/wwwroot" Default="" Mode="rw" Description="&#x7F51;&#x7AD9;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/panel/www/wwwroot/</Config>
+</Container>
