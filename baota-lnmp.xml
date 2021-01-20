@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding='utf-8'?>
 <Container version="2">
   <Name>baota-lnmp</Name>
   <Repository>pch18/baota:lnmp</Repository>
