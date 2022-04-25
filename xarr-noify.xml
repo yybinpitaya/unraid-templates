@@ -1,63 +1,63 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Xarr-Notify</Name>
-  <Repository>xiaoyi510/xarr-notify:test</Repository>
-  <Registry>https://hub.docker.com/r/xiaoyi510/xarr-notify</Registry>
-  <Network>bridge</Network>
-  <MyIP/>
-  <Shell>sh</Shell>
-  <Privileged>false</Privileged>
-  <Support/>
-  <Project>https://github.com/xiaoyi510/Xarr-Notify</Project>
-  <Overview>XArr-Notify Sonarr Radarr 影片通知 Wordpress Overseerr emby 等通知 </Overview>
-  <Category/>
-  <WebUI>http://[IP]:[PORT:8085]</WebUI>
-  <TemplateURL/>
-  <Icon>https://blog.52nyg.com/wp-content/uploads/2016/11/200x200.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1650851351</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
-  <Description>XArr-Notify Sonarr Radarr 影片通知 Wordpress Overseerr emby 等通知 </Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8085</HostPort>
-        <ContainerPort>8085</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/xarr-notify</HostDir>
-      <ContainerDir>/app/conf</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/sonarr/MediaCover/</HostDir>
-      <ContainerDir>/app/images/sonarr</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/radarr/MediaCover/</HostDir>
-      <ContainerDir>/app/images/radarr</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/xarr-notify/XArr-Notify</HostDir>
-      <ContainerDir>/app/XArr-Notify</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment/>
-  <Labels/>
-  <Config Name="Appdata Path" Target="/app/conf" Default="" Mode="rw" Description="容器 Path: /app/conf" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xarr-notify</Config>
-  <Config Name="Sonarr MediaCover" Target="/app/images/sonarr" Default="" Mode="rw" Description="容器 Path: /app/images/sonarr" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/sonarr/MediaCover/</Config>
-  <Config Name="radarr MediaCover" Target="/app/images/radarr" Default="" Mode="rw" Description="容器 Path: /app/images/radarr" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/radarr/MediaCover/</Config>
-  <Config Name="Port" Target="8085" Default="" Mode="tcp" Description="容器 Port: 8085" Type="Port" Display="always" Required="false" Mask="false">8085</Config>
-  <Config Name="Host Path 4" Target="/app/XArr-Notify" Default="" Mode="rw" Description="容器 Path: /app/XArr-Notify" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xarr-notify/XArr-Notify</Config>
+    <Name>Xarr-Notify</Name>
+    <Repository>xiaoyi510/xarr-notify:test</Repository>
+    <Registry>https://hub.docker.com/r/xiaoyi510/xarr-notify</Registry>
+    <Network>bridge</Network>
+    <MyIP/>
+    <Shell>sh</Shell>
+    <Privileged>false</Privileged>
+    <Support/>
+    <Project>https://github.com/xiaoyi510/Xarr-Notify</Project>
+    <Overview>XArr-Notify Sonarr Radarr 影片通知 Wordpress Overseerr emby 等通知 </Overview>
+    <Category/>
+    <WebUI>http://[IP]:[PORT:8085]</WebUI>
+    <TemplateURL/>
+    <Icon>https://blog.52nyg.com/wp-content/uploads/2022/04/1650872541-image-1650872540646.png</Icon>
+    <ExtraParams/>
+    <PostArgs/>
+    <CPUset/>
+    <DateInstalled>1650851351</DateInstalled>
+    <DonateText/>
+    <DonateLink/>
+    <Description>XArr-Notify Sonarr Radarr 影片通知 Wordpress Overseerr emby 等通知 </Description>
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish>
+            <Port>
+                <HostPort>8085</HostPort>
+                <ContainerPort>8085</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
+    <Data>
+        <Volume>
+            <HostDir>/mnt/user/appdata/xarr-notify</HostDir>
+            <ContainerDir>/app/conf</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir>/mnt/user/appdata/sonarr/MediaCover/</HostDir>
+            <ContainerDir>/app/images/sonarr</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir>/mnt/user/appdata/radarr/MediaCover/</HostDir>
+            <ContainerDir>/app/images/radarr</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir>/mnt/user/appdata/xarr-notify/XArr-Notify</HostDir>
+            <ContainerDir>/app/XArr-Notify</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <Environment/>
+    <Labels/>
+    <Config Name="Appdata Path" Target="/app/conf" Default="" Mode="rw" Description="容器 Path: /app/conf" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xarr-notify</Config>
+    <Config Name="Sonarr MediaCover" Target="/app/images/sonarr" Default="" Mode="rw" Description="容器 Path: /app/images/sonarr" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/sonarr/MediaCover/</Config>
+    <Config Name="radarr MediaCover" Target="/app/images/radarr" Default="" Mode="rw" Description="容器 Path: /app/images/radarr" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/radarr/MediaCover/</Config>
+    <Config Name="Port" Target="8085" Default="" Mode="tcp" Description="容器 Port: 8085" Type="Port" Display="always" Required="false" Mask="false">8085</Config>
+    <Config Name="Host Path 4" Target="/app/XArr-Notify" Default="" Mode="rw" Description="容器 Path: /app/XArr-Notify" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xarr-notify/XArr-Notify</Config>
 </Container>
