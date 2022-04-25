@@ -1,27 +1,27 @@
+<?xml version="1.0"?>
 <Container version="2">
     <Name>xarr-rss</Name>
     <Repository>xiaoyi510/xarr-rss</Repository>
     <Registry>https://hub.docker.com/r/xiaoyi510/xarr-rss</Registry>
     <Network>bridge</Network>
-    <MyIP></MyIP>
+    <MyIP/>
     <Shell>sh</Shell>
     <Privileged>false</Privileged>
-    <Support></Support>
-    <Project></Project>
+    <Support/>
+    <Project/>
     <Overview>XArr系列作品 
 Rss 处理器</Overview>
-    <Category></Category>
+    <Category/>
     <WebUI>http://[IP]:[PORT:8086]</WebUI>
-    <TemplateURL></TemplateURL>
+    <TemplateURL/>
     <Icon>https://blog.52nyg.com/wp-content/uploads/2016/11/200x200.png</Icon>
-    <ExtraParams></ExtraParams>
-    <PostArgs></PostArgs>
-    <CPUset></CPUset>
+    <ExtraParams/>
+    <PostArgs/>
+    <CPUset/>
     <DateInstalled>1650851391</DateInstalled>
-    <DonateText></DonateText>
-    <DonateLink></DonateLink>
-    <Description>XArr系列作品 
-剧集 Rss 处理器</Description>
+    <DonateText/>
+    <DonateLink/>
+    <Description>XArr系列作品 \r\n剧集 Rss 处理器</Description>
     <Networking>
         <Mode>bridge</Mode>
         <Publish>
@@ -39,8 +39,8 @@ Rss 处理器</Overview>
             <Mode>rw</Mode>
         </Volume>
     </Data>
-    <Environment></Environment>
-    <Labels></Labels>
+    <Environment/>
+    <Labels/>
     <Config Name="管理端口" Target="8086" Default="" Mode="tcp" Description="容器 Port: 8086" Type="Port" Display="always" Required="false" Mask="false">8086</Config>
     <Config Name="配置目录" Target="/app/conf" Default="" Mode="rw" Description="容器 Path: /app/conf" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xarr-rss</Config>
 </Container>
