@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<Container version="2">
-    <Name>xarr-rss</Name>
+<Container version="1">
+    <Name>xarr-rss-unraid</Name>
     <Repository>xiaoyi510/xarr-rss</Repository>
     <Registry>https://hub.docker.com/r/xiaoyi510/xarr-rss</Registry>
     <Network>bridge</Network>
@@ -9,12 +9,11 @@
     <Privileged>false</Privileged>
     <Support/>
     <Project/>
-    <Overview>XArr系列作品 
-Rss 处理器</Overview>
+    <Overview>XArr系列作品 Rss 处理器</Overview>
     <Category/>
     <WebUI>http://[IP]:[PORT:8086]</WebUI>
     <TemplateURL/>
-    <Icon>https://blog.52nyg.com/wp-content/uploads/2022/04/1650872541-image-1650872540646.png</Icon>
+    <Icon>https://xarr.52nyg.com/images/logo.png</Icon>
     <ExtraParams/>
     <PostArgs/>
     <CPUset/>
